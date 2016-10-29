@@ -12,18 +12,28 @@
 #
 #############################################################################
 
-puts 'Hello there, and what\'s your name?'
+name = ""
+years = 0
+Min = 525600
+age = 0
+puts 'what is your name?'
 name = gets
-puts 'Your name is ' + name +'what a awesome name!'
+name = name.chomp
+puts 'how many years old are you?'
+years = gets.chomp
+years = years.chomp
+age = years.to_i * Min
 
-puts 'How old are you?'
-age = gets
-var = 365 * 24 * 60
-puts + name + ', did you know you are' var * + age + 'minutes old?'
+puts "#{name}, you\'re #{age} minutes old."
 
-puts 'what is the temperature today'
-temperature = gets
-(+ temperature + - 32) / 1.8
-puts + name +', the temperature is' + temperature + 'degrees Celsius.'
+temperature = ""
+puts 'what is the temperature today in fahrenheit?'
+degrees = 0
+degrees = gets.chomp
+degrees = degrees.chomp
+celsius = 0
+Celsius = (degrees.to_i - 32) /1.8
+
+puts "It\'s #{Celsius} degrees celsius."
 
 puts 'thank you,' + name + '!'
